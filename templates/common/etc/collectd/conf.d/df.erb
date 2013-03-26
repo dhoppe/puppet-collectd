@@ -1,0 +1,13 @@
+#
+# THIS FILE IS MANAGED BY PUPPET
+# <%= file %>
+#
+
+LoadPlugin df
+
+<Plugin df>
+	MountPoint "/dev"
+	MountPoint "/dev/shm"
+	MountPoint "/lib/init/rw"
+	IgnoreSelected true
+</Plugin>

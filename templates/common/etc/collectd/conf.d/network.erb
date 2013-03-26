@@ -1,0 +1,14 @@
+#
+# THIS FILE IS MANAGED BY PUPPET
+# <%= file %>
+#
+
+LoadPlugin network
+
+<Plugin "network">
+<% if fqdn == server -%>
+	Listen "<%= server -%>" "25826"
+<% else -%>
+	Server "<%= server -%>" "25826"
+<% end -%>
+</Plugin>

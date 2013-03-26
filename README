@@ -1,0 +1,17 @@
+# Class: collectd
+#   This module manages collectd
+#
+# Definition:
+#   -
+#
+# Parameters:
+#   -
+#
+# Actions:
+#   Installs the collectd.conf
+#
+# Requires:
+#   -
+#
+# Sample Usage:
+#   -
