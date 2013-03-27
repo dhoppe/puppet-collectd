@@ -10,7 +10,7 @@
 #
 # == Sample Usage:
 #
-define collectd::file($server = undef) {
+define collectd::file() {
   file { "/etc/collectd/conf.d/${name}":
     owner   => 'root',
     group   => 'root',

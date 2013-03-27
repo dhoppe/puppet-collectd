@@ -6,6 +6,7 @@
 LoadPlugin network
 
 <Plugin "network">
+<% server = scope.lookupvar('collectd::config::server') -%>
 <% if fqdn == server -%>
 	Listen "<%= server -%>" "25826"
 <% else -%>
