@@ -23,6 +23,7 @@ class collectd {
   collectd::file { 'irq': }
   collectd::file { 'load': }
   collectd::file { 'memory': }
+  collectd::file { 'network': }
   collectd::file { 'processes': }
   collectd::file { 'rrdtool': }
   collectd::file { 'swap': }
