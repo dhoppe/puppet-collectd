@@ -25,7 +25,9 @@ class collectd {
   collectd::file { 'memory': }
   collectd::file { 'network': }
   collectd::file { 'processes': }
-  collectd::file { 'rrdtool': }
+  if $::fqdn == $collectd::config::server {
+    collectd::file { 'rrdtool': }
+  }
   collectd::file { 'swap': }
   collectd::file { 'syslog': }
   collectd::file { 'users': }

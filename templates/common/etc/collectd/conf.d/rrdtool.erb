@@ -7,11 +7,8 @@ LoadPlugin rrdtool
 
 <Plugin rrdtool>
 	DataDir "/var/lib/collectd/rrd"
-<% server = scope.lookupvar('collectd::config::server') -%>
-<% if fqdn == server -%>
 	CacheFlush 900
 	CacheTimeout 120
 	RandomTimeout 0
 	WritesPerSecond 30
-<% end -%>
 </Plugin>
